@@ -1,0 +1,361 @@
+/* All Common CSS Starts Here */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+
+/* All Common CSS Ends Here */
+
+/* Header Part Starts */
+.navbar {
+  background: #121212;
+}
+.nav-link {
+  color: #959595;
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #fd6f00;
+}
+.hireBtn {
+  background: #fd6f00;
+  padding: 8px 25px;
+  border-radius: 10px;
+  color: #fff;
+  outline: none;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.hireBtn:hover {
+  background: transparent;
+  border-color: #959595;
+}
+
+/* Header Part Ends*/
+
+/* Banner Part Start */
+#bannerPart {
+  padding-top: 170px;
+  padding-bottom: 100px;
+  background: #121212;
+}
+.counterItem {
+  padding: 10px;
+  background: transparent; /* remove opacity so text color doesn't blend */
+  border-right: 2px solid #707070;
+  text-align: left;
+}
+
+/* Counter text colors */
+.bannerCounter .counterItem h2 {
+  color: #fd6f00;
+  padding: 20px 0px; /* orange number */
+  font-size: 24px;
+}
+
+.bannerCounter .counterItem h3 {
+  color: #e9e9e9; /* light label */
+  font-size: 20px;
+}
+.bannerText h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #959595;
+}
+.bannerCounter {
+  background: #7070703a;
+  padding: 24px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.brn {
+  border-right: none;
+}
+
+.bannerText h1 {
+  background-image: linear-gradient(
+    to right,
+    #984300 0%,
+    #fd6f00 46%,
+    #ca5900 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #984300;
+  font-size: 70px;
+  font-weight: 900;
+  color: #707070;
+  padding: 30px 0;
+}
+.bannerText h4 {
+  color: #707070;
+  padding: 20px 0;
+}
+.bannerIcon i {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 35px 45px 20px 0px;
+  position: relative;
+  top: -58%;
+  left: 39%;
+  transform: translate(-10%, -10%);
+}
+.bannerIcon {
+  padding-top: 17px;
+  padding-bottom: 30px;
+  display: flex;
+}
+.iconRound {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #707070;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+.bannerBtn .hireBtn {
+  margin-right: 20px;
+}
+
+.bannerModel {
+  position: relative; /* ensures proper stacking context */
+  top: -100px;
+  left: 50px;
+  width: 100%;
+  /* height: auto; */
+  z-index: 1;
+  transition: 0.4s ease; /* keep it above ellipse */
+}
+.model {
+  transition: transform 0.4s ease; /* applies to both in & out */
+}
+
+/* .model:hover {
+  transform: scale(1.05);
+}
+
+.ellipse:hover {
+    transform: scale(-2.05);
+    transition: .4s;
+} */
+.ellipse {
+  position: absolute; /* make it properly positioned */
+  top: 150px;
+  right: 50px;
+  width: 100%;
+  /* height: auto; */
+  z-index: -1; /* push it behind */
+  transition: transform 0.4s ease; /* applies to both in & out */
+  transform: scaleX(-1);
+}
+
+.bannerModel:hover .ellipse {
+  transform: scaleX(-1) scale(0.95);
+}
+
+.bannerModel:hover .model {
+  transform: scale(1.05);
+}
+
+/* Banner Part Ends */
+
+/* Service part starts here */
+#ServicPart {
+  background: #121212;
+  padding: 35px;
+}
+.commonTitle h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.commonTitle p {
+  margin-top: 40px;
+  font-weight: 700;
+  color: #707070;
+  margin-bottom: -100px;
+}
+.serviceItem {
+  background: rgba(255, 255, 255, 4%);
+  padding: 35px;
+  text-align: center;
+  width: 399.67px;
+  height: 322px;
+  border-radius: 24px;
+  justify-content: space-between;
+  margin-top: 50px;
+  transition: 0.4s ease;
+}
+.serviceItem:hover {
+  background: transparent;
+  transition: 0.4s ease;
+  cursor: pointer;
+  box-shadow: 2px 0px 30px rgba(253, 111, 0);
+  scale: 1.05;
+}
+
+.serviceItem h3 {
+  color: #fd6f00;
+  padding: 30px;
+}
+.serviceItem p {
+  color: #575757;
+  font-size: 20px;
+  letter-spacing: 3%;
+  line-height: 30px;
+}
+.serviceItem:hover p {
+  background-image: linear-gradient(
+    to right,
+    #ff7b00 0%,
+    #ffffff 46%,
+    #ff6f00 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #984300;
+  transition: color 0.4s ease;
+  /* text-shadow: #4c00efd6 0px 2px 20px; */
+}
+.serviceItem:hover h3 {
+  background-image: linear-gradient(
+    to right,
+    #ff7b00 0%,
+    #ffffff 46%,
+    #ef0084 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #984300;
+  transition: color 0.4s ease;
+  /* text-shadow: #ef008395 0px 0px 50px;  */
+}
+
+/* Service part Ends here */
+
+/* About Me Start Here */
+#aboutMe {
+  background: #121212;
+  padding: 35px;
+}
+.bannerText2 h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fefefe;
+  margin-top: 90px;
+}
+.bannerText2 p {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+}
+/* ************************** About Me Model CSS Starts************************** */
+.aboutMeImg {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  width: 100%;
+  z-index: 1;
+  transition: 0.4s ease; /* keep it above ellipse */
+  min-height: 676px; /* match rectangle height to allow perfect centering */
+  position: relative; /* ensure absolute children center inside */
+  margin-bottom: 100px;
+}
+.model2 {
+  filter: grayscale(100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: transform 0.4s ease, filter 0.9s ease; /* smooth in & out for both */
+  /* will-change: transform; */
+}
+.rectangle2 {
+  position: absolute; /* centered background behind model2 */
+  top: 50%;
+  left: 50%;
+  width: 523px;
+  height: 676px;
+  z-index: -1; /* push it behind */
+  transition: transform 0.4s ease; /* applies to both in & out */
+  transform: translate(-50%, -50%) scaleX(-1);
+}
+.aboutMeImg:hover .rectangle2 {
+  transform: translate(-50%, -50%) scaleX(-1) scale(0.95);
+}
+.aboutMeImg:hover .model2 {
+  transform: translate(-50%, -50%) scale(1.05);
+  filter: none; /* returns to colored */
+}
+/* ************************** About Me Model CSS Ends************************** */
+
+.aboutmeContent {
+    padding: 30px;
+}
+
+.aboutmeText p {
+  margin-top: 90px;
+  padding: 0px; /* equal padding all around */
+  font-size: 20px;
+  color: #707070;
+  /* width: 631px; */
+  line-height: 30px;
+  line-break: strict;
+}
+
+/* ****** progress cssss */
+
+.progressIcon i {
+  color: #ffffff;
+  font-size: 40px;
+  padding: 35px 45px 20px 0px;
+  position: relative;
+  top: -18%;
+  left: 29%;
+  transform: translate(-10%, -10%);
+}
+.progressIcon {
+  padding-top: 17px;
+  padding-bottom: 30px;
+  display: flex;
+}
+.pRound {
+  height: 70px;
+  width: 80px;
+  border: 2px solid #707070;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+/* ****** progress cssss */
+
+
+
+/* About Me Ends Here */
