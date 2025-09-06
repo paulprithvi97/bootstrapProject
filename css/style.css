@@ -132,6 +132,11 @@ p {
   padding-bottom: 30px;
   display: flex;
 }
+.iconRound:hover i {
+  color: #fd6f00;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
 .iconRound {
   height: 40px;
   width: 40px;
@@ -139,6 +144,7 @@ p {
   border-radius: 50%;
   position: relative;
   margin-right: 10px;
+  transition: .4s ease;
 }
 .bannerBtn .hireBtn {
   margin-right: 20px;
@@ -317,7 +323,7 @@ p {
 /* ************************** About Me Model CSS Ends************************** */
 
 .aboutmeContent {
-    padding: 30px;
+  padding: 30px;
 }
 
 .aboutmeText p {
@@ -354,8 +360,186 @@ p {
   position: relative;
   margin-right: 10px;
 }
+.aboutmeCounter h3 {
+  color: #ff6f00;
+  padding: 20px 0px; /* orange number */
+}
+.aboutmeCounter p {
+  color: #ffffff; /* light label */
+  font-size: 20px;
+}
 /* ****** progress cssss */
 
-
-
 /* About Me Ends Here */
+.commonTitle h2 {
+  color: #ffffff;
+  padding: 20px;
+}
+#portfolioSection {
+  background: #121212;
+  padding: 35px;
+}
+#portfolioSection {
+  background: #121212;
+  padding-bottom: 150px;
+}
+.portfolioSectinPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.sectionOne h3 {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 3%;
+  padding: 14px 40px;
+  background: rgba(255, 255, 255, 4%);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 4%);
+  transition: 0.4s;
+}
+.sectionOne h3:hover {
+  background: #fd6f00;
+  color: #fff;
+  cursor: pointer;
+}
+.portfoliosectionImg {
+  padding-bottom: 30px;
+}
+.portfoliosectionimgText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 8%);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.portfoliosectionimgText h3 {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 3%;
+}
+.portfoliosectionimgText h4 {
+  color: #959595;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 3%;
+}
+
+/* ----------------------------------------------- */
+#contactPart {
+  background: #121212;
+  padding-bottom: 150px;
+  margin-top: -100px;
+}
+.customContact {
+  background: rgba(255, 255, 255, 4%);
+  padding: 14px 24px;
+  width: 48%;
+  border: none;
+  margin-top: 25px;
+  outline: none;
+  color:#e9e9e9;
+  
+  
+}
+.customSelect {
+  color: #959595;
+}
+.customContact:focus {
+  background: transparent;
+}
+.contactFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.customContact::placeholder {
+  color: #959595;
+}
+
+.customContact::placeholder:hover {
+  color: transparent;
+}
+
+.commonTitle {
+  padding-bottom: 100px;
+}
+.commonTitle h2 {
+  padding-bottom: 0px;
+}
+/* Contact Form Part CSS End */
+
+/* Footer Part CSS Start */
+
+#footerPart {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background: #1b1b1b;
+}
+.footerLogoPart {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.portfolioD a {
+  display: flex;
+  align-items: center; /* optional: centers contents vertically */
+  justify-content: center; /* optional: centers contents horizontally */
+}
+.portfolioD {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerLink ul {
+  display: flex;
+}
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.footerContact {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.common {
+  display: flex;
+  color: #959595;
+  align-items: center;
+}
+.common i {
+  margin-right: 10px;
+}
+.common p {
+  color: #959595;
+  font-size: 20px;
+  font-weight: 700;
+}
+.email {
+  margin-right: 30px;
+}
+.footerprivacy {
+  text-align: center;
+}
+.footerprivacy p {
+  display: inline-block;
+  color: #707070;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  padding: 16px 120px 0 120px;
+  border-top: 2px solid #959595;
+}
+/* ----------------------------------------------- */
